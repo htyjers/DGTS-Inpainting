@@ -14,7 +14,7 @@ In summary, our contributions are summarized below:
 - To ease the computational burden, we disclose several training tricks to overcome memory overhead for GPUs.
 
 ![](https://github.com/htyjers/DGTS-Inpainting/blob/main/images/bridge.png)
-<p align="center">Figure 2.  Intuition of the bridge module..</p>
+<p align="center">Figure 2.  Intuition of the bridge module.</p>
 
 
 #
@@ -37,7 +37,7 @@ Run "Python3 /DGTS/code/test/run_train.py"
 ```
 * *The code and pre-trained models of upsampling network borrows heavily from [here](https://github.com/yingchen001/BAT-Fill), we apprecite the authors for sharing their codes.*
 
-3. Please download the pre-trained model of [Places2](https://www.dropbox.com/s/3jlaprihtktaxxq/places.pth?dl=0) into "/DGTS/save/"
+3. Please download the pre-trained model of [Places2](https://www.dropbox.com/s/jipius8hwcr3795/Places.pth?dl=0) into "/DGTS/save/"
 
 
 
