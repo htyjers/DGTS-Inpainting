@@ -37,10 +37,10 @@ The code and pre-trained models of upsampling network are borrowing from [here](
 #
 ## Example Results
 
--Visual comparison between our method and the competitors
+- Visual comparison between our method and the competitors.
 
 ![](https://github.com/htyjers/DGTS-Inpainting/blob/main/images/compare.png)
 
--Attention maps of exemplar texture references
+- Attention maps of exemplar texture references.
 
 ![](https://github.com/htyjers/DGTS-Inpainting/blob/main/images/correct.png)
