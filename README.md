@@ -16,8 +16,31 @@ In this paper, we delve globally into texture and structure information to well 
 ![](https://github.com/htyjers/DGTS-Inpainting/blob/main/images/bridge.png)
 <p align="center">Figure 2.  Intuition of the bridge module..</p>
 
+
+#
+## Run 
+1. To train the proposed model described in the paper, run the following command:
+```
+Run "Python3 /DGTS/code/train/run_train.py"
+```
+
+2. To inpaint the masked images, run the following command:
+```
+Run "Python3 /DGTS/code/test/run_train.py"
+```
+The code and pre-trained models of upsampling network are borrowing from [here](https://github.com/yingchen001/BAT-Fill). Thanks to their works.
+
+3. Please download pre-trained models above [Places2](https://www.dropbox.com/s/3jlaprihtktaxxq/places.pth?dl=0) in "/DGTS/save/"
+
+
+
 #
 ## Example Results
 
+-Visual comparison between our method and the competitors
+
 ![](https://github.com/htyjers/DGTS-Inpainting/blob/main/images/compare.png)
-<p align="center">Figure 3.  Visual comparison between our method and the competitors..</p>
+
+-Attention maps of exemplar texture references
+
+![](https://github.com/htyjers/DGTS-Inpainting/blob/main/images/correct.png)
