@@ -19,6 +19,13 @@ In this paper, we delve globally into texture and structure information to well 
 
 #
 ## Run 
+0. Requirements
+```
+1. Python >= 3.6
+2. PyTorch >= 1.0
+3. NVIDIA GPU + CUDA cuDNN
+```
+
 1. To train the proposed model described in the paper, run the following command:
 ```
 Run "Python3 /DGTS/code/train/run_train.py"
