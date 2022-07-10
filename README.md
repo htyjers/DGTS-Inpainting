@@ -1,2 +1,10 @@
-# DGTS-Inpainting
-Delving Globally into Texture and Structure for Image Inpainting
+# Delving Globally into Texture and Structure for Image Inpainting [ACM MM2022]
+
+This repository is the official code for the paper "Delving Globally into Texture and Structure for Image Inpainting" by Haipeng Liu, Yang Wang (corresponding author: yangwang@hfut.edu.cn), Meng Wang, Yong Rui.
+#
+## Introduction
+In this paper, we delve globally into texture and structure information to well capture the semantics for image inpainting. Unlike the current decoder-only transformer within the pixel level for image inpainting, our model adopts the transformer pipeline paired with both encoder and decoder. On one hand, the encoder captures the texture semantic correlations of all patches across image via self-attention module. On the other hand, an adaptive patch vocabulary is dynamically established in the decoder for the filled patches over the masked regions. Building on this,  a structure-texture matching attention module (**_Eq.5 and 6_**) anchored on the known regions comes up to marry the best of these two worlds for progressive inpainting via a probabilistic diffusion process (**_Eq.8_**). Our model is orthogonal to the fashionable arts, such as Convolutional Neural Networks (CNNs), Attention and Transformer model, from the perspective of texture and structure information for image inpainting.
+
+###### In summary, our contributions are summarized below:
+- We propose a transformer pipeline paired with both encoder and decoder, where the encoder module aims at capturing the semantic correlations of the whole images within texture references, leading to a *global* texture reference set; we design a coarse filled attention module to exploit all the known image patches to fill in the masked regions, yielding a *global* structure information.
+- To endow the decoder with the capacity of marring the best of the two worlds, *i.e.*, global texture reference and structure information. we equip the decoder with a structure-texture matching attention module via an intuitive attention transition manner, where  an adaptive patch vocabulary is dynamically established for the filled patches over the masked regions via a probabilistic diffusion process.
