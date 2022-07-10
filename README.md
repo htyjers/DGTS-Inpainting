@@ -8,7 +8,7 @@ In this paper, we delve globally into texture and structure information to well 
 ![](https://github.com/htyjers/DGTS-Inpainting/blob/main/images/model.png)
 <p align="center">Figure 1. Illustration of the proposed transformer pipeline.</p>
 
-###### In summary, our contributions are summarized below:
+In summary, our contributions are summarized below:
 - We propose a transformer pipeline paired with both encoder and decoder, where the encoder module aims at capturing the semantic correlations of the whole images within texture references, leading to a *global* texture reference set; we design a coarse filled attention module to exploit all the known image patches to fill in the masked regions, yielding a *global* structure information.
 - To endow the decoder with the capacity of marring the best of the two worlds, *i.e.*, global texture reference and structure information. we equip the decoder with a structure-texture matching attention module via an intuitive attention transition manner, where  an adaptive patch vocabulary is dynamically established for the filled patches over the masked regions via a probabilistic diffusion process.
 - To ease the computational burden, we disclose several training tricks to overcome memory overhead for GPUs.
