@@ -28,7 +28,7 @@ Run "Python3 /DGTS/code/train/run_train.py"
 ```
 Run "Python3 /DGTS/code/test/run_train.py"
 ```
-The code and pre-trained models of upsampling network are borrowing from [here](https://github.com/yingchen001/BAT-Fill). Thanks to their works.
+The code and pre-trained models of upsampling network borrows heavily from [here](https://github.com/yingchen001/BAT-Fill), we apprecite the authors for sharing their codes.
 
 3. Please download the pre-trained model above [Places2](https://www.dropbox.com/s/3jlaprihtktaxxq/places.pth?dl=0) in "/DGTS/save/"
 
