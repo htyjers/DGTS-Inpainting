@@ -5,7 +5,7 @@ This repository is the official code for the paper "Delving Globally into Textur
 ## Introduction
 In this paper, we delve globally into texture and structure information to well capture the semantics for image inpainting. Unlike the current decoder-only transformer within the pixel level for image inpainting, our model adopts the transformer pipeline paired with both encoder and decoder. On one hand, the encoder captures the texture semantic correlations of all patches across image via self-attention module. On the other hand, an adaptive patch vocabulary is dynamically established in the decoder for the filled patches over the masked regions. Building on this,  a structure-texture matching attention module (**_Eq.5 and 6_**) anchored on the known regions comes up to marry the best of these two worlds for progressive inpainting via a probabilistic diffusion process (**_Eq.8_**). Our model is orthogonal to the fashionable arts, such as Convolutional Neural Networks (CNNs), Attention and Transformer model, from the perspective of texture and structure information for image inpainting.
 
-![](https://github.com/htyjers/DGTS-Inpainting/blob/main/images/model.png)
+![](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/images/model.png)
 <p align="center">Figure 1. Illustration of the proposed transformer pipeline.</p>
 
 In summary, our contributions are summarized below:
@@ -13,7 +13,7 @@ In summary, our contributions are summarized below:
 - To endow the decoder with the capacity of marring the best of the two worlds, *i.e.*, global texture reference and structure information. we equip the decoder with a structure-texture matching attention module via an intuitive attention transition manner, where  an adaptive patch vocabulary is dynamically established for the filled patches over the masked regions via a probabilistic diffusion process.
 - To ease the computational burden, we disclose several training tricks to overcome memory overhead for GPUs.
 
-![](https://github.com/htyjers/DGTS-Inpainting/blob/main/images/bridge.png)
+![](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/images/bridge.png)
 <p align="center">Figure 2.  Intuition of the bridge module.</p>
 
 
@@ -46,8 +46,8 @@ Run "Python3 /DGTS/code/test/run_train.py"
 
 - Visual comparison between our method and the competitors.
 
-![](https://github.com/htyjers/DGTS-Inpainting/blob/main/images/compare.png)
+![](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/images/compare.png)
 
 - Attention maps of exemplar texture references.
 
-![](https://github.com/htyjers/DGTS-Inpainting/blob/main/images/correct.png)
+![](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/images/correct.png)
