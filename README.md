@@ -1,6 +1,6 @@
 # DGTS
 
-This repository is the official code for the paper "Delving Globally into Texture and Structure for Image Inpainting" by Haipeng Liu, Yang Wang (corresponding author: yangwang@hfut.edu.cn), Meng Wang, Yong Rui (ACM MM 2022, Lisbon, Portugal).
+This repository is the official code for the paper "Delving Globally into Texture and Structure for Image Inpainting" by Haipeng Liu, Yang Wang (corresponding author: yangwang@hfut.edu.cn), Meng Wang, Yong Rui. *ACM Multimedia 2022, Lisbon, Portugal*
 #
 ## Introduction
 In this paper, we delve globally into texture and structure information to well capture the semantics for image inpainting. Unlike the current decoder-only transformer within the pixel level for image inpainting, our model adopts the transformer pipeline paired with both encoder and decoder. On one hand, the encoder captures the texture semantic correlations of all patches across image via self-attention module. On the other hand, an adaptive patch vocabulary is dynamically established in the decoder for the filled patches over the masked regions. Building on this,  a structure-texture matching attention module (**_Eq.5 and 6_**) anchored on the known regions comes up to marry the best of these two worlds for progressive inpainting via a probabilistic diffusion process (**_Eq.8_**). Our model is orthogonal to the fashionable arts, such as Convolutional Neural Networks (CNNs), Attention and Transformer model, from the perspective of texture and structure information for image inpainting.
