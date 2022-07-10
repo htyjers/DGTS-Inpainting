@@ -1,4 +1,4 @@
-# Delving Globally into Texture and Structure for Image Inpainting [ACM MM2022]
+# DGTS
 
 This repository is the official code for the paper "Delving Globally into Texture and Structure for Image Inpainting" by Haipeng Liu, Yang Wang (corresponding author: yangwang@hfut.edu.cn), Meng Wang, Yong Rui.
 #
