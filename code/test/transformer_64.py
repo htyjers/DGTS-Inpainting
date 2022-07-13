@@ -101,7 +101,7 @@ class Generator(nn.Module):
         embedding = embedding1 + self.adropout(embedding)
         embedding = self.anorm(embedding)
         #'''
-        lamed = [0.3,0.3,0.3,0.3,0.3,0.3]
+        lamed = [0.1,0.1,0.1,0.1,0.1,0.1]
         order = torch.cumsum(in_mask,axis=1)
         
         out_c, score_c = self.decoder(embedding[torch.where(in_mask[:]==1)[0],torch.where(in_mask[:]==1)[1]].reshape(embedding.shape[0],-1,embedding.shape[-1]),
