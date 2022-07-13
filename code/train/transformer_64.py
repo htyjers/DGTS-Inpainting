@@ -94,7 +94,7 @@ class Generator(nn.Module):
         embedding = embedding1 + self.adropout(embedding)
         embedding = self.anorm(embedding)
         
-        lamed = [0.3,0.3,0.3,0.3,0.3,0.3]
+        lamed = [0.1,0.1,0.1,0.1,0.1,0.1]
         order = torch.cumsum(in_mask,axis=1)
         
         ## Transformer Structure Decoder
