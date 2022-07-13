@@ -37,7 +37,7 @@ Run "Python3 /DGTS/code/test/run_train.py"
 ```
 * *The code and pre-trained models of upsampling network borrows heavily from [here](https://github.com/yingchen001/BAT-Fill), we apprecite the authors for sharing their codes.*
 
-3. Please download the pre-trained model of [Places2](https://www.dropbox.com/s/jipius8hwcr3795/places.pth?dl=0) into "/DGTS/save/"
+3. Please download the pre-trained model of [Places2](https://www.dropbox.com/s/jipius8hwcr3795/places.pth?dl=0) into "/DGTS/save/". We following the previous work to test our model, the input images randomly match masks which adopted from the widely used irregular mask dataset .
 
 
 
