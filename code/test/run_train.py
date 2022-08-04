@@ -5,7 +5,7 @@ import math
 os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2,3' # 114
 def run_exp():    
     the_command = (
-        'python3 /DGTS/test/main.py' 
+        'python3 /DGTS/code/test/main.py' 
         + ' --dataset_dir=' + '/DGTS/data/places'
         
     )
