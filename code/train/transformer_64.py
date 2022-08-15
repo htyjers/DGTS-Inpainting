@@ -86,7 +86,7 @@ class Generator(nn.Module):
             e2 = att @ eu
             e2 = e2.view(embedding.shape[0],e2.shape[1],embedding.shape[-1])
             
-            tmp = np.linspace(0,B-1,B,dtype=np.int)##batch_size
+            tmp = np.linspace(0,B-1,B,dtype=np.int)
             
             for i in range(e2.shape[1]):
                 embedding[tmp,torch.where(in_mask2[:]==64-(u+1))[1][i], :] = e2[tmp,i,:]
