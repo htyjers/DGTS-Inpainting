@@ -97,7 +97,7 @@ class Generator(nn.Module):
         lamed = [0.1,0.1,0.1,0.1,0.1,0.1]
         order = torch.cumsum(in_mask,axis=1)
         
-        ## Transformer Structure Decoder
+        ## Transformer Structure-Texture Decoder
         out_c, score_c = self.decoder(embedding[torch.where(in_mask1[:]==16)[0],torch.where(in_mask1[:]==16)[1]].reshape(embedding.shape[0],-1,embedding.shape[-1]),
                                          memory)    
         if int(order[0,63].data) + 1 > 49:
