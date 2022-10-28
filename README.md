@@ -46,7 +46,7 @@ Run "Python3 /DGTS/code/test/run_train.py"
 
 
 3. Please download the pre-trained model of [Places2](https://www.dropbox.com/s/jipius8hwcr3795/places.pth?dl=0). 
-* *You can set the path of our pre-trained model [here](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/code/test/test.py#L106) and the path of upsampling pre-trained model [here](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/code/test/test.py#L100).*
+* *You can set the path of our pre-trained model in [here](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/code/test/test.py#L106) and the path of upsampling pre-trained model in [here](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/code/test/test.py#L100).*
 
 4. Following the previous work, the input images randomly match masks which adopted from the widely used [irregular mask dataset](https://nv-adlr.github.io/publication/partialconv-inpainting) to generate the masked images.
 
