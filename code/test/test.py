@@ -105,7 +105,7 @@ class Trainer(object):
         print(dgts_path)
         self.netG.load_state_dict(torch.load(dgts_path))
         self.netG.eval()
-        self.train_loader = DataLoader(self.trainset, batch_size=1, shuffle=False, num_workers=self.args.num_work, drop_last=False) 
+        self.train_loader = DataLoader(self.trainset, batch_size=1, shuffle=True, num_workers=self.args.num_work, drop_last=False) 
         
         for i,data_in in enumerate(self.train_loader):
             real = data_in.to(self.args.device)
