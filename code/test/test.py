@@ -66,7 +66,7 @@ def postprocess(x):
 class Trainer(object):
     def __init__(self, args):
         # Set the folder to save the records and checkpoints
-        log_base_dir = '/DGTS/logs'
+        log_base_dir = '/DGTS/logs' ############ set test save path
         meta_base_dir = osp.join(log_base_dir, args.file_name)
         self.save_path = meta_base_dir
         if os.path.exists(self.save_path):
