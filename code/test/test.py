@@ -80,7 +80,7 @@ class Trainer(object):
         ####### model #######
         self.netG = Generator().to(self.args.device)
         self.netG = torch.nn.DataParallel(self.netG)
-        ##试试
+        ##square
         self.mask = torch.ones(self.args.batch_size, 1, self.args.image_size, self.args.image_size, device = self.args.device)
         self.mask[:, :, int((self.args.image_size - self.args.crop_size)//2): int((self.args.image_size + self.args.crop_size)//2), 
         int((self.args.image_size - self.args.crop_size)//2): int((self.args.image_size + self.args.crop_size)//2)] = 0.0
