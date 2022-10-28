@@ -17,6 +17,7 @@ In summary, our contributions are summarized below:
 <p align="center">Figure 2.  Intuition of the bridge module.</p>
 
 
+
 #
 ## Run 
 0. Requirements
@@ -24,21 +25,30 @@ In summary, our contributions are summarized below:
 Python >= 3.6
 PyTorch >= 1.0
 NVIDIA GPU + CUDA cuDNN
+scikit-image
+scipy
+opencv-python
+matplotlib
 ```
 
-1. To train the proposed model described in the paper, run the following command:
+
+1. To train the proposed model described in the paper. Prepare training datasets and put them in ```./data/places2/train```, then run the following command:
 ```
 Run "Python3 /DGTS/code/train/run_train.py"
 ```
 
-2. To inpaint the masked images, run the following command:
+
+2. To inpaint the masked images, Prepare training datasets and put them in ```./data/places2/test```, then run the following command:
 ```
 Run "Python3 /DGTS/code/test/run_train.py"
 ```
 * *The code and pre-trained models of upsampling network borrows heavily from [here](https://github.com/yingchen001/BAT-Fill), we apprecite the authors for sharing their codes.*
 
-3. Please download the pre-trained model of [Places2](https://www.dropbox.com/s/jipius8hwcr3795/places.pth?dl=0) into "/DGTS/save/". 
-* *Following the previous work, the input images randomly match masks which adopted from the widely used irregular mask dataset to generate the masked images.*
+
+3. Please download the pre-trained model of [Places2](https://www.dropbox.com/s/jipius8hwcr3795/places.pth?dl=0). 
+* *You can set the path of our pre-trained model [here](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/code/test/test.py#L106) and the path of upsampling pre-trained model [here](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/code/test/test.py#L100).*
+
+4. Following the previous work, the input images randomly match masks which adopted from the widely used [irregular mask dataset](https://nv-adlr.github.io/publication/partialconv-inpainting) to generate the masked images.
 
 
 
@@ -52,3 +62,19 @@ Run "Python3 /DGTS/code/test/run_train.py"
 - Attention maps of exemplar texture references.
 
 ![](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/images/correct.png)
+
+
+#
+## Citation
+
+If any part of our paper and repository is helpful to your work, please generously cite with:
+
+```
+@inproceedings{liu2022delving,
+  title={Delving Globally into Texture and Structure for Image Inpainting},
+  author={Liu, Haipeng and Wang, Yang and Wang, Meng and Rui, Yong},
+  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
+  pages={1270--1278},
+  year={2022}
+}
+```
