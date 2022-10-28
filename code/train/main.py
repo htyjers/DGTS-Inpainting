@@ -16,7 +16,7 @@ if __name__ == '__main__':
     parser.add_argument('--max_epoch', type=int, default=50)
     parser.add_argument('--batch_size', type=int, default=32)
     parser.add_argument('--start_epoch', type=int, default=0)
-    parser.add_argument('--file_name', type=str, default='train')
+    parser.add_argument('--file_name', type=str, default='train') # ## set train Folder name for save the pretrained model
     parser.add_argument('--phase', type=str, default='train', choices=['train', 'test']) # Phase
 
     args = parser.parse_args()
