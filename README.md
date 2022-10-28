@@ -38,7 +38,7 @@ Run "Python3 /DGTS/code/train/run_train.py"
 ```
 
 
-2. To inpaint the masked images, Prepare training datasets and put them in ```./data/places2/test```, then run the following command:
+2. To inpaint the masked images, Prepare testing datasets and put them in ```./data/places2/test```, then run the following command:
 ```
 Run "Python3 /DGTS/code/test/run_train.py"
 ```
