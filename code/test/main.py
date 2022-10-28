@@ -14,7 +14,7 @@ if __name__ == '__main__':
     parser.add_argument('--seed', type=int, default=0)
     parser.add_argument('--dataset_dir', type=str, default=None) # Dataset folder
     parser.add_argument('--max_epoch', type=int, default=50)
-    parser.add_argument('--batch_size', type=int, default=64)
+    parser.add_argument('--batch_size', type=int, default=1)
     parser.add_argument('--start_epoch', type=int, default=0)
     parser.add_argument('--file_name', type=str, default='test')
     parser.add_argument('--phase', type=str, default='test', choices=['train', 'test']) # Phase
