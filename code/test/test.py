@@ -95,9 +95,9 @@ class Trainer(object):
 
     def train(self):
         # Set the meta-train log
-        upasmple_path ="/DGTS/test/models/places.pth"# The path of Upsampler pretrained network
-        print(upasmple_path)
-        self.up.load_state_dict(torch.load(upasmple_path))
+        upsample_path ="/DGTS/test/models/places.pth"# The path of Upsampler pretrained network
+        print(upsample_path)
+        self.up.load_state_dict(torch.load(upsample_path))
         self.up = self.up.cuda()
         self.up.eval()
         
