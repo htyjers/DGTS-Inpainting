@@ -1,4 +1,4 @@
-""" Trainer for meta-train phase. """
+
 import json
 import os
 import os.path as osp
@@ -64,7 +64,6 @@ def postprocess(x):
     x.clamp_(0, 1)
     return x
 class Trainer(object):
-    """The class that contains the code for the meta-train phase and meta-eval phase."""
     def __init__(self, args):
         # Set the folder to save the records and checkpoints
         log_base_dir = '/DGTS/logs'
@@ -95,17 +94,16 @@ class Trainer(object):
         self.up = UpsamplerGenerator(opt)
 
     def train(self):
-        """The function for the meta-train phase."""
         # Set the meta-train log
-        pp ="/DGTS/test/models/places.pth"
+        pp ="/DGTS/test/models/places.pth"# The path of Upsampler pretrained network
         print(pp)
-        self.up.load_state_dict(torch.load(pp))#
+        self.up.load_state_dict(torch.load(pp))
         self.up = self.up.cuda()
         self.up.eval()
         
-        data_path = '/DGTS/logs/save/places.pth'
+        data_path = '/DGTS/logs/save/places.pth'#The path of our pretrained network
         print(data_path)
-        self.netG.load_state_dict(torch.load(data_path))#
+        self.netG.load_state_dict(torch.load(data_path))
         self.netG.eval()
         self.train_loader = DataLoader(self.trainset, batch_size=self.args.batch_size, shuffle=False, num_workers=self.args.num_work, drop_last=False) 
         
