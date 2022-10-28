@@ -23,7 +23,7 @@ class Trainer(object):
     """The class that contains the code for the meta-train phase and meta-eval phase."""
     def __init__(self, args):
         # Set the folder to save the records and checkpoints
-        log_base_dir = '/DGTS/logs/'
+        log_base_dir = '/DGTS/logs/' ############ set train save path
         meta_base_dir = osp.join(log_base_dir, args.file_name)
         self.save_path = meta_base_dir
         if os.path.exists(self.save_path):
