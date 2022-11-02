@@ -94,7 +94,8 @@ class Generator(nn.Module):
         embedding = embedding1 + self.adropout(embedding)
         embedding = self.anorm(embedding)
         
-        lamed = [0.1,0.1,0.1,0.1,0.1,0.1]
+        lamed = [0.1,0.1,0.1,0.1,0.1,0.1] # For places2
+        #lamed = [0.3,0.3,0.3,0.3,0.3,0.3] # For CelebA or PSV
         order = torch.cumsum(in_mask,axis=1)
         
         ## Transformer Structure-Texture Decoder
