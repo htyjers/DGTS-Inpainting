@@ -45,7 +45,7 @@ Run "Python3 /DGTS/code/test/run_train.py"
 * *The code and pre-trained models of upsampling network borrows heavily from [here](https://github.com/yingchen001/BAT-Fill), we apprecite the authors for sharing their codes.*
 
 
-3. Please download the pre-trained model of [Places2](https://www.dropbox.com/s/jipius8hwcr3795/places.pth?dl=0). 
+3. Please download the pre-trained model of [Places2](https://www.dropbox.com/s/jipius8hwcr3795/places.pth?dl=0), [CelebA](https://www.dropbox.com/s/943xcupfe2f5bl3/celebA.pth?dl=0) or [PSV](https://www.dropbox.com/s/qerluzqv7fnb4e0/PSV.pth?dl=0). 
 * *You can set the path of our pre-trained model in [here](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/code/test/test.py#L106) and the path of upsampling pre-trained model in [here](https://github.com/htyjers/DGTS-Inpainting/blob/DGTS/code/test/test.py#L100).*
 
 4. Following the previous work, the input images randomly match masks which adopted from the widely used [irregular mask dataset](https://nv-adlr.github.io/publication/partialconv-inpainting) to generate the masked images.
