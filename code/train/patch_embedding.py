@@ -39,14 +39,14 @@ class Embeddings(nn.Module):
             
             update_mask = F.conv2d(mask, self.weight_maskUpdater.cuda(), bias=None, stride=self.patch_size)
             
-            update_mask1 = torch.clamp(update_mask, 48, 64)-48
+            update_mask1 = torch.clamp(update_mask, 63, 64)-48
             update_mask1 = update_mask1.flatten(2)
             update_mask1 = update_mask1.transpose(-1, -2).squeeze(2)
             
             update_mask2 = update_mask.flatten(2)
             update_mask2 = update_mask2.transpose(-1, -2).squeeze(2)
             
-            update_mask = torch.clamp(update_mask, 60, 61)-60
+            update_mask = torch.clamp(update_mask, 63, 64)-63
             update_mask = update_mask.flatten(2)
             update_mask = update_mask.transpose(-1, -2).squeeze(2)
             return embeddings, update_mask, update_mask1, update_mask2
