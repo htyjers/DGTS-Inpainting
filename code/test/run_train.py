@@ -2,7 +2,7 @@
 import os
 import math
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2,3' # 114
+os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2,3'
 def run_exp():    
     the_command = (
         'python3 /DGTS/code/test/main.py' 
@@ -12,4 +12,4 @@ def run_exp():
 
     os.system(the_command + ' --phase=test')
 
-run_exp()          ## best 
+run_exp()
